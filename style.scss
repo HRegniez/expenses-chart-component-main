@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+$clr-prim1: hsl(10, 79%, 65%);
+$clr-prim2: hsl(186, 34%, 60%);
+
+$clr-neut1: hsl(25, 47%, 15%);
+$clr-neut2: hsl(28, 10%, 53%);
+$clr-neut3: hsl(27, 66%, 92%);
+$clr-neut4: hsl(33, 100%, 98%);
+
+* {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: $clr-neut3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.header {
+    background-color: $clr-prim1;
+    width: 350px;
+    height: 5rem;
+    display: flex;
+    color: $clr-neut3;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+
+    justify-content: space-between;
+    padding: 1rem;
+
+    &_balance {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 0.7rem;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    img {
+        width: 2.5rem;
+    }
+}
+
+.main {
+    background-color: $clr-neut4;
+    width: 350px;
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem;
+
+    h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    &_chart {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 0.5rem;
+        height: 12rem;
+        margin-bottom: 1rem;
+
+        &_day {
+            font-size: 0.6rem;
+            color: $clr-neut2;
+            text-align: center;
+        }
+
+    }
+
+    &_bar {
+        background-color: $clr-prim1;
+        height: 5rem;
+        border-radius: 0.3rem;
+        width: 1.7rem;
+    }
+
+    &_bottom {
+        border-top: 1px solid $clr-neut3;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+

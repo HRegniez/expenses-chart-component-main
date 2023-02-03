@@ -7,7 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
-
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,91 +17,83 @@
 </head>
 <body>
 
-  <div>
-    <div>
-      <div>
-        <h2></h2>
-        <p></p>
+  <div class="wrapper">
+
+    <div class="header">
+
+      <div class="header_balance">
+
+        <h2>My balance</h2>
+
+        <p>$921.48</p>
       </div>
+
       <img src="./images/logo.svg" alt="logo">
     </div>
 
-    <div>
-      <h1></h1>
-      <div>
-        <div>
-          <div></div>
-          <span></span>
-        </div>
-        <div>
-          <div></div>
-          <span></span>
-        </div>
-        <div>
-          <div></div>
-          <span></span>
-        </div>
-        <div>
-          <div></div>
-          <span></span>
-        </div>
-        <div>
-          <div></div>
-          <span></span>
-        </div>
-        <div>
-          <div></div>
-          <span></span>
-        </div>
-        <div>
-          <div></div>
-          <span></span>
-        </div>
+    <div class="main">
 
-        <div>
+      <h1>Spending - Last 7 days</h1>
+
+      <div class="main_chart">
+
+        <div >
+          <div class="main_bar"></div>
+          <p class="main_chart_day">mon</p>
+        </div>
+        <div >
+          <div class="main_bar"></div>
+          <p class="main_chart_day">mon</p>
+        </div>
+        <div >
+          <div class="main_bar"></div>
+          <p class="main_chart_day">mon</p>
+        </div>
+        <div >
+          <div class="main_bar"></div>
+          <p class="main_chart_day">mon</p>
+        </div>
+        <div >
+          <div class="main_bar"></div>
+          <p class="main_chart_day">mon</p>
+        </div>
+        <div >
+          <div class="main_bar"></div>
+          <p class="main_chart_day">mon</p>
+        </div>
+        <div >
+          <div class="main_bar"></div>
+          <p class="main_chart_day">mon</p>
+        </div>  
+      </div>
+
+      <div class="main_bottom">
           <div>
             <h2>
-
+              Total this month
             </h2>
             <p>
-
+              $478.33
             </p>
           </div>
           <div>
             <p>
-
+              +2.4%
             </p>
             <h3>
-
+              from last month
             </h3>
           </div>
         </div>
-      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
     </div>
   </div>
 
-  My balance
-  $921.48
+  <script src="./app.js"></script>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

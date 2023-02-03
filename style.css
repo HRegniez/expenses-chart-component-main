@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(27deg, 66%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  background-color: hsl(10deg, 79%, 65%);
+  width: 350px;
+  height: 5rem;
+  display: flex;
+  color: hsl(27deg, 66%, 92%);
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header_balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header_balance h2 {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.header_balance p {
+  font-size: 1.2rem;
+}
+.header img {
+  width: 2.5rem;
+}
+
+.main {
+  background-color: hsl(33deg, 100%, 98%);
+  width: 350px;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+}
+.main h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.main_chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0.5rem;
+  height: 12rem;
+  margin-bottom: 1rem;
+}
+.main_chart_day {
+  font-size: 0.6rem;
+  color: hsl(28deg, 10%, 53%);
+  text-align: center;
+}
+.main_bar {
+  background-color: hsl(10deg, 79%, 65%);
+  height: 5rem;
+  border-radius: 0.3rem;
+  width: 1.7rem;
+}
+.main_bottom {
+  border-top: 1px solid hsl(27deg, 66%, 92%);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
