@@ -6,21 +6,23 @@ fetch("./data.json")
 
         const container = document.querySelector(".main_chart");
 
-        var most = 0;
-        var highest;
+        var highestIndex = 0;
+        var highest = 0;
+
+        for (let j = 0; j < data.length; j++) {
+            const day = data[j];
+            console.log(day.amount);
+            if (day.amount > highest) {
+                highest = day.amount;
+                highestIndex = j;
+            }
+            console.log(highestIndex);
+        }
+
 
         for (let i = 0; i < data.length; i++) {
             const days = data[i];
             
-
-            if (days.amount > most) {
-                most = days.amount;
-                highest = days;
-                console.log(highest);
-                console.log(most);
-            };
-            
-
             const dayContain = document.createElement("div");
 
             const amount = document.createElement("div");
@@ -34,10 +36,9 @@ fetch("./data.json")
             dayContain.appendChild(amount);
             dayContain.appendChild(day);
             container.appendChild(dayContain);
-            
-            
-        }
-
-        
+            if (i = highestIndex) {
+                amount.classList.add('highlight');
+            }
+        }   
     })
 
