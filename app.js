@@ -28,17 +28,18 @@ fetch("./data.json")
             const amount = document.createElement("div");
             amount.style = "height:" + days.amount/10*2 + "rem";
             amount.classList.add('main_bar');
-
+            if (highest == days.amount) {
+                amount.classList.add('highlight');
+            }
             const day = document.createElement("p");
             day.innerText = days.day;
             day.classList.add('main_chart_day');
 
+            
             dayContain.appendChild(amount);
             dayContain.appendChild(day);
             container.appendChild(dayContain);
-            if (i = highestIndex) {
-                amount.classList.add('highlight');
-            }
+            
         }   
     })
 
