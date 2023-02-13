@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .header {
@@ -63,11 +64,17 @@
   font-size: 0.6rem;
   color: hsl(28deg, 10%, 53%);
   text-align: center;
+  margin-top: 1rem;
 }
 .main_bar {
   background-color: hsl(10deg, 79%, 65%);
   border-radius: 0.3rem;
-  width: 1.7rem;
+  width: 1.8rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease-out;
+}
+.main_bar:hover {
+  opacity: 0.6;
 }
 .main_bottom {
   border-top: 1px solid hsl(27deg, 66%, 92%);
@@ -75,7 +82,54 @@
   display: flex;
   justify-content: space-between;
 }
+.main_bottom h3 {
+  color: hsl(28deg, 10%, 53%);
+  font-size: 0.6rem;
+  margin-bottom: 0.3rem;
+}
+.main_bottom h2 {
+  font-size: 1.4rem;
+}
+.main_bottom h4 {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: right;
+  margin-bottom: 0.3rem;
+}
+
+.day-contain {
+  position: relative;
+  transition: opacity 0.3s ease-out;
+}
+
+.pop {
+  position: absolute;
+  top: -1.3rem;
+  font-size: 0.6rem;
+  background-color: hsl(25deg, 47%, 15%);
+  color: hsl(33deg, 100%, 98%);
+  left: -0.3rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.2rem;
+  transition: all 0.15s ease-out;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0);
+}
 
 .highlight {
   background-color: hsl(186deg, 34%, 60%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.6rem;
+}
+.attribution a {
+  font-size: 0.7rem;
 }/*# sourceMappingURL=style.css.map */

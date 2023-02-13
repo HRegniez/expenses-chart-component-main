@@ -21,7 +21,7 @@ $clr-neut4: hsl(33, 100%, 98%);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    position: relative;
 }
 
 .header {
@@ -79,6 +79,7 @@ $clr-neut4: hsl(33, 100%, 98%);
             font-size: 0.6rem;
             color: $clr-neut2;
             text-align: center;
+            margin-top: 1rem;
         }
 
     }
@@ -87,7 +88,14 @@ $clr-neut4: hsl(33, 100%, 98%);
         background-color: $clr-prim1;
         
         border-radius: 0.3rem;
-        width: 1.7rem;
+        width: 1.8rem;
+        cursor: pointer;
+
+        transition: opacity 0.3s ease-out;
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
     &_bottom {
@@ -95,12 +103,59 @@ $clr-neut4: hsl(33, 100%, 98%);
         padding-top: 1rem;
         display: flex;
         justify-content: space-between;
+
+        h3 {
+            color: $clr-neut2;
+            font-size: 0.6rem;
+            margin-bottom: 0.3rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+        }
+        h4 {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            text-align: right;
+            margin-bottom: 0.3rem;
+        }
     }
+}
+
+.day-contain {
+    position: relative;
+    transition: opacity 0.3s ease-out;
+}
+
+.pop {
+    position: absolute;
+    top: -1.3rem;
+    font-size: 0.6rem;
+    background-color: $clr-neut1;
+    color: $clr-neut4;
+    left: -0.3rem;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.2rem;
+    transition: all 0.15s ease-out;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0);
 }
 
 .highlight {
     background-color: $clr-prim2;
 }
 
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.6rem;
 
+    a {
+        font-size: 0.7rem;
+    }
+}
 
