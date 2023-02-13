@@ -132,4 +132,41 @@
 }
 .attribution a {
   font-size: 0.7rem;
+}
+
+@media screen and (min-width: 900px) {
+  * {
+    font-size: 24px;
+  }
+  .header, .main {
+    width: 550px;
+  }
+  .header_balance {
+    padding-bottom: 0.3rem;
+  }
+  .main {
+    padding: 0.6rem 1.2rem;
+  }
+  .main_bar {
+    width: 2.2rem;
+  }
+  .main_chart {
+    height: 10rem;
+    margin-bottom: 0.6rem;
+  }
+  .main_chart_day {
+    margin-top: 0.4rem;
+  }
+  .main_bottom {
+    margin-bottom: 1rem;
+  }
+  .main_bottom h2 {
+    font-size: 1.8rem;
+  }
+  .main_bottom h3 {
+    font-weight: 400;
+  }
+  .pop {
+    left: -0.1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

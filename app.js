@@ -30,7 +30,7 @@ fetch("./data.json")
             dayContain.classList.add("day-contain");
 
             const amount = document.createElement("div");
-            amount.style = "height:" + days.amount/10*1.5 + "rem";
+            amount.style = "height:" + days.amount/10*1.3 + "rem";
             amount.classList.add('main_bar');
             if (highest == days.amount) {
                 amount.classList.add('highlight');

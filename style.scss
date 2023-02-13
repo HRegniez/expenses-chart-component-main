@@ -159,3 +159,49 @@ $clr-neut4: hsl(33, 100%, 98%);
     }
 }
 
+@media screen and (min-width: 900px) {
+    * {
+        font-size: 24px;
+    }
+
+    .header, .main {
+        width: 550px;
+    }
+
+    .header {
+        &_balance {
+            padding-bottom: 0.3rem;
+        }
+    }
+
+    .main {
+        padding: 0.6rem 1.2rem;
+        &_bar {
+            width: 2.2rem;
+        }
+
+        &_chart {
+            height: 10rem;
+            margin-bottom: 0.6rem;
+
+            &_day {
+                margin-top: 0.4rem;
+            }
+        }
+
+        &_bottom {
+            h2 {
+                font-size: 1.8rem;
+            }
+            h3 {
+                font-weight: 400;
+            }
+            margin-bottom: 1rem;
+        }
+        
+    }
+    .pop {
+        left: -0.1rem;
+    }
+}
+
